@@ -72,7 +72,9 @@ void add_to_weighted_Astar_space( State *S, int op, BfsNode *father );
 
 
 
-void do_Astar_epsilon_repairing( void );
+// quick fix as it wouldn't allow compiling with do_Astar_epsilon() in main.c
+//void do_Astar_epsilon_repairing( void );
+void do_Astar_epsilon( void );
 BfsNode *Astar_epsilon_select_first( void );
 void add_to_Astar_epsilon_space( State *S, int op, BfsNode *father );
 
