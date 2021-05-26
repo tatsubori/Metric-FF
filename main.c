@@ -692,8 +692,8 @@ int main( int argc, char *argv[] )
 
   /* one input name missing
    */
-  if ( !gcmd_line.ops_file_name || 
-       !gcmd_line.fct_file_name ) {
+  if ( !gcmd_line.ops_file_name[0] || 
+       !gcmd_line.fct_file_name[0] ) {
     fprintf(stdout, "\nff: two input files needed\n\n");
     ff_usage();      
     exit( 1 );
