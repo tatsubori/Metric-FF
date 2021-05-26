@@ -82,6 +82,9 @@ static char * serrmsg[] = {
 void fcterr( int err, char *par );
 
 
+int fct_pddlparse (void);
+int fct_pddllex (void);
+int fct_pddlerror( );
 static int sact_err;
 static char *sact_err_par = NULL;
 static Bool sis_negated = FALSE;
