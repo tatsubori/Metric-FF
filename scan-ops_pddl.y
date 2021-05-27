@@ -75,6 +75,9 @@ static char *serrmsg[] = {
 void opserr( int err, char *par );
 
 
+int ops_pddlparse (void);
+int ops_pddllex (void);
+int ops_pddlerror( );
 static int sact_err;
 static char *sact_err_par = NULL;
 static PlOperator *scur_op = NULL;
